@@ -1,0 +1,293 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+#svg1,#svg2,#svg3,#svg4{
+    height:100px;
+}
+.cont{
+    border: 2px solid black;
+    height:90vh;
+    width:90vw;
+    padding:50px;
+    margin:30px;
+    /* text-align: center; */
+
+}
+.cont1{
+    border: 2px solid black;
+    height:90vh;
+    width:90vw;
+    padding:50px;
+    margin:30px;
+    /* text-align: center; */
+
+}
+.child{
+    border: 2px solid none;
+
+    height:30vh;
+    width:30vw;
+   background-color: blue;
+   animation-name: box;
+   animation-duration: 7s;
+   animation-iteration-count: infinite;
+}
+@keyframes box {
+    0%{
+        transform: translate(0px,0vw);
+       margin-right: 40px;
+    }
+    25%{
+        transform: translate(51vw,0px);
+        background-color: aqua;
+       
+    }
+    50%{
+        transform: translate(51vw, 48vh);
+        background-color: rgb(16, 102, 59);
+ 
+    }
+    75%{
+        transform: translate(0vw, 48vh);
+        background-color: blueviolet;
+    }
+    100%{
+        transform: translate(0px,0vw);
+    }
+    
+}
+.lights{
+    border: 2px solid black;
+    /* display: inline-block; */
+    padding: 10px 30px;
+    background-color: grey;
+    border-radius: 25px;
+}
+.lights input{
+    font-size: 300px ; height: 100px; width: 100px;
+}
+
+
+#in3:checked ~ #svg1{
+    animation-name: in33;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+#in3:checked ~ #svg2{
+    animation-name: in33;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+#in3:checked ~ #svg3{
+    animation-name: in33;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+#in3:checked ~ #svg4{
+    animation-name: in33;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+}
+@keyframes in33 {
+    from{
+        transform:translateX(0vw);
+    }
+    to{
+        transform:translateX(70vw);
+    }
+}
+@media screen and (min-width:701px){
+    @keyframes in33 {
+        from{
+            transform:translateX(0vw);
+        }
+        to{
+            transform:translateX(70vw);
+        }
+    }
+    #svg1,#svg2,#svg3,#svg4{
+        height:80px;
+    }
+}
+@media screen and (max-width:700px){
+    @keyframes box {
+        0%{
+            transform: translate(0px,0vw);
+           /* margin-right: 40px; */
+           
+        }
+        25%{
+            transform: translate(30vw,0px);
+            background-color: aqua;
+        
+        }
+        50%{
+            transform: translate(30vw, 50vh);
+            background-color: rgb(16, 102, 59);
+        }
+        75%{
+            transform: translate(0vw, 50vh);
+            background-color: blueviolet;
+        }
+        100%{
+            transform: translate(0px,0vw);
+        }
+        
+    }
+    .lights{
+        border: 2px solid black;
+        /* display: inline-block; */
+        display: block;
+        /* text-align: center; */
+        background-color: grey;
+        border-radius: 25px;
+    }
+    @keyframes in33 {
+        from{
+            transform:translateX(0vw);
+        }
+        to{
+            transform:translateX(50vw);
+        }
+    }
+    #svg1,#svg2,#svg3,#svg4{
+        height:80px;
+    }
+    
+}
+@media screen and (min-width:365px) and (max-width:599px) {
+    @keyframes box {
+        0%{
+            transform: translate(0vw,0vw);
+           /* margin-right: 40px; */
+        }
+        25%{
+            transform: translate(30vw,0vw);
+            background-color: aqua;
+        }
+        50%{
+            transform: translate(30vw, 50vh);
+            background-color: rgb(16, 102, 59);
+        }
+        75%{
+            transform: translate(0vw, 50vh);
+            background-color: blueviolet;
+        }
+        100%{
+            transform: translate(0px,0vw);
+        }
+        
+        
+    }
+    .cont{
+        border: 2px solid black;
+        height:90vh;
+        width:80vw;
+        padding:10px;
+        margin:30px;
+        text-align: center;
+    
+    }
+    .lights .in1{
+        height: 50px;
+        width: 50px;
+    }
+    .lights .in2{
+        height: 50px;
+        width: 50px;
+    }
+    .lights .in3{
+        height: 50px;
+        width: 50px;
+    }
+    .lights{
+        border: 2px solid black;
+        /* display: inline-block; */
+        display: block;
+        /* text-align: center; */
+        background-color: grey;
+        border-radius: 25px;
+    }
+    @keyframes in33 {
+        from{
+            transform:translateX(0vw);
+        }
+        to{
+            transform:translateX(40vw);
+        }
+    }
+    #svg1,#svg2,#svg3,#svg4{
+        height:60px;
+    }
+}
+@media screen and (min-width:200px) and (max-width:364px) {
+    #svg1,#svg2,#svg3,#svg4{
+        height:40px;
+    }
+    @keyframes box {
+        0%{
+            transform: translate(0vw,0vw);
+           /* margin-right: 40px; */
+        }
+        25%{
+            transform: translate(30vw,0vw);
+            background-color: aqua;
+        }
+        50%{
+            transform: translate(30vw, 50vh);
+            background-color: rgb(16, 102, 59);
+        }
+        75%{
+            transform: translate(0vw, 50vh);
+            background-color: blueviolet;
+        }
+        100%{
+            transform: translate(0px,0vw);
+        }
+        
+    }
+    .cont{
+        border: 2px solid black;
+        height:90vh;
+        width:80vw;
+        padding:10px;
+        margin:30px;
+        text-align: center;
+    
+    }
+    .lights .in1{
+        height: 40px;
+        width: 40px;
+    }
+    .lights .in2{
+        height: 40px;
+        width: 40px;
+    }
+    .lights .in3{
+        height: 40px;
+        width: 40px;
+    }
+    .lights{
+        border: 2px solid black;
+        /* display: inline-block; */
+        display: block;
+        /* text-align: center; */
+        background-color: grey;
+        border-radius: 25px;
+    }
+   
+    @keyframes in33 {
+        from{
+            transform:translateX(0vw);
+        }
+        to{
+            transform:translateX(34vw);
+        }
+    }
+}
